@@ -3,3 +3,8 @@
     update_cache: yes
     upgrade: "yes"
   become: yes
+- name: install via apt
+  apt:
+    pkg:
+      - curl
+  become: yes
