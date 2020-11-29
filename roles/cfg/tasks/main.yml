@@ -1,2 +1,8 @@
 ---
 # tasks file for cfg
+- name: install vim
+  apt:
+    pkg:
+      - vim
+  become: yes
+    
