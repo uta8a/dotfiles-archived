@@ -21,4 +21,20 @@ skipping: [localhost]
 PLAY RECAP **********************************************************************************************************************************************************************
 localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
 ```
-- [ ] #3 
+- [ ] #3 事前にインストールするものをshell scriptではなく、ansibleにする。install.shは最小化
+- [ ] #4 role neovimでneovim入れる。
+- [ ] #5 moleculeでのテストする(cfgに軽いもの入れてやってみる)
+- [ ] #6 moleculeを理解するためにcfgでやってみる。
+  - [molecule init後の各ディレクトリの内容](https://docs.ansible.com/ansible/2.9/user_guide/playbooks_reuse_roles.html)
+  - defaults: varsと近い。デフォルトの変数を入れる
+  - files: このroleでdeployされるファイル
+  - handlers: このroleで使用されるハンドラ
+  - meta: roleについてのmetaデータ
+  - molecule: ?
+  - tasks: roleのmain部分となるtask定義
+  - templates: template部分
+  - tests: ?
+  - vars: defaultsと近い。defaults以外の変数を入れる。
+  - travis.yml: test用のCI。今回は無視。
+  - .yamlint: ?
+  - README.md: そのroleについてのREADME?
