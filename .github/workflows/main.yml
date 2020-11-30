@@ -10,5 +10,5 @@ jobs:
       - name: Build docker
         uses: ./
         id: dotfiles
-      - name: Output
-        run: echo "${{ steps.dotfiles.outputs }}"
+      - name: Message
+        run: echo "See Build docker goss output"

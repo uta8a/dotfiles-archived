@@ -5,6 +5,9 @@ package:
   git:
     title: Installed check git
     installed: true
+  emacs:
+    title: Installed check git
+    installed: true
 file:
   ~/.gitconfig:
     title: File check gitconfig
