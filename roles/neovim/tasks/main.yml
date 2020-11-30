@@ -1,3 +1,11 @@
+- name: Install pre requirements
+  apt:
+    pkg:
+      - apt-transport-https
+      - ca-certificates
+      - gnupg-agent
+      - software-properties-common
+  become: yes
 - name: Add repository for nvim 
   apt_repository:
     repo: ppa:neovim-ppa/stable
