@@ -74,4 +74,9 @@ dotfiles_test_dotfiles_1 exited with code 1
 - [x] #9 role cfgで一般的にほしい物入れる(主にapt, git config?)
   - 0299056b9a7f9f330b48f46297f274acc448ef00
   - file追加もここでやりたい
-- [ ] #10 GitHub Actionsに載せる
+- [x] #10 GitHub Actionsに載せる
+  - 89d2485a2e22c89142346e1461c86b69217c3373
+- [x] #11 GitHub ActionsでFailすることの確認
+  - Emacs入れてないけど加えてみて、gossが落ちたときGitHub Actionsがどうなるか確認
+  - 29d819aedc8268f614315717b827ca5b425045a0
+  - gossが落ちると、actionsも落ちてくれることを確認した。
