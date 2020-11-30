@@ -1,6 +1,8 @@
 # dotfiles
 ![CI](https://github.com/uta8a/dotfiles/workflows/Test%20dotfiles%20on%20GitHub%20Actions/badge.svg?branch=master)
 
+- [中身についての詳しい記事](https://www.blog.uta8a.net/posts/2020-11-30-dotfiles/)
+
 ## Usage
 ```shell
 $ git clone 
