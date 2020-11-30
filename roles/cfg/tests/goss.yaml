@@ -1,7 +1,13 @@
 package:
   vim:
-    title: installed vim
+    title: Installed check vim
     installed: true
-  emacs:
-    title: installed emacs
-    installed: false
+  git:
+    title: Installed check git
+    installed: true
+file:
+  ~/.gitconfig:
+    title: File check gitconfig
+    exists: true
+    contains:
+      - "name = uta8a"
