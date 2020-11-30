@@ -1,4 +1,4 @@
 package:
-  vim:
-    title: installed vim
+  neovim:
+    title: Installed check neovim
     installed: true
