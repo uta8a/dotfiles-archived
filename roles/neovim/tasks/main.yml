@@ -1,2 +1,6 @@
----
-# tasks file for neovim
+- name: install vim
+  apt:
+    pkg:
+      - vim
+  become: yes
+    

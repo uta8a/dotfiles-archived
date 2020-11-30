@@ -1,0 +1,4 @@
+package:
+  vim:
+    title: installed vim
+    installed: true

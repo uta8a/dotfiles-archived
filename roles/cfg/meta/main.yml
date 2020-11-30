@@ -1,9 +1,0 @@
-galaxy_info:
-  author: uta8a
-  description: for personal use, setup config
-  company: None
-  license: MIT
-  min_ansible_version: 2.9
-  galaxy_tags: []
-dependencies: []
-  

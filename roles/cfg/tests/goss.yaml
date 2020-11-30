@@ -1,0 +1,7 @@
+package:
+  vim:
+    title: installed vim
+    installed: true
+  emacs:
+    title: installed emacs
+    installed: false
