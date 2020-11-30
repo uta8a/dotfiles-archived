@@ -1,2 +1,3 @@
 gossfile:
   roles/cfg/tests/goss.yaml: {}
+  roles/neovim/tests/goss.yaml: {}
