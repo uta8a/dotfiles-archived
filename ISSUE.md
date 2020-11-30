@@ -22,9 +22,13 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
 ```
 - [ ] #3 事前にインストールするものをshell scriptではなく、ansibleにする。install.shは最小化
+  - 56bcf7189c4030a57bc569ebcf8410b6e20a7358
+  - cb69ef347f3b024dfd5e44d22094c971a6429970
 - [ ] #4 role neovimでneovim入れる。
-- [ ] #5 moleculeでのテストする(cfgに軽いもの入れてやってみる)
-- [ ] #6 moleculeを理解するためにcfgでやってみる。
+- [x] #5 moleculeでのテストする(cfgに軽いもの入れてやってみる)
+  - 820c1f4487fa2d3e7c3c34b42cc99ac7e4ebba36
+  - moleculeの採用をやめた(Docker+gossに変更)
+- [x] #6 moleculeを理解するためにcfgでやってみる。
   - [molecule init後の各ディレクトリの内容](https://docs.ansible.com/ansible/2.9/user_guide/playbooks_reuse_roles.html)
   - defaults: varsと近い。デフォルトの変数を入れる
   - files: このroleでdeployされるファイル
@@ -38,3 +42,6 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=0    s
   - travis.yml: test用のCI。今回は無視。
   - .yamlint: ?
   - README.md: そのroleについてのREADME?
+  - 820c1f4487fa2d3e7c3c34b42cc99ac7e4ebba36
+  - moleculeの採用をやめた(Docker+gossに変更)
+- [ ] #7 Dockerfile for goss testを作る

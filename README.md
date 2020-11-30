@@ -1,9 +1,16 @@
 # dotfiles
 
 ## generate new role
-- requirements: install ansible, molecule (see install.sh)
-
 ```shell
-$ cd roles
-$ mol init role <role_name>
+$ mkdir roles/<new_role>
+$ tree roles/<new_role>
+roles/cfg/
+├── files
+├── README.md
+├── tasks
+│   └── main.yml
+├── tests
+│   └── goss.yml
+└── vars
+    └── main.yml
 ```
