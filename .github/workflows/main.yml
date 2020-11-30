@@ -10,4 +10,6 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
-    
+      - name: Run test
+        run: |
+          /entry-point.sh
