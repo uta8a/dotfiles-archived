@@ -3,11 +3,9 @@
     update_cache: yes
     upgrade: "yes"
   become: yes
-- name: install via apt
-  apt:
-    pkg:
-      - curl
-  become: yes
-- name: setup config
+- name: Setup config
   import_role:
     name: cfg
+- name: Install neovim & neovim settings
+  import_role:
+    name: neovim
