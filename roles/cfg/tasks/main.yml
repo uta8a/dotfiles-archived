@@ -50,5 +50,9 @@
   with_items:
     - {name: "user.name",  value: "uta8a" }
     - {name: "user.email", value: "noumodulity@gmail.com" }
-    - {name: "ui.color",   value: "True" }
     - {name: "core.editor", value: "vim"}
+- name: Create .cache
+  file:
+    path: "{{ ansible_env.HOME }}/.cache"
+    state: directory
+    mode: '0755'
