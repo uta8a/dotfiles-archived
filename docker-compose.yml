@@ -1,0 +1,6 @@
+version: "3"
+services:
+  test_dotfiles:
+    build:
+      context: ./
+    command: goss -g /dotfiles/goss.yaml validate
