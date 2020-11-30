@@ -1,5 +1,5 @@
 # dotfiles
-![Ansible CI](https://github.com/uta8a/dotfiles/workflows/Test+dotfiles+on+GitHub+Actions/badge.svg?branch=master)
+![CI](https://github.com/uta8a/dotfiles/workflows/Test%20dotfiles%20on%20GitHub%20Actions/badge.svg?branch=master)
 
 ## Usage
 ```shell
