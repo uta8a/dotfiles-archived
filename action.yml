@@ -1,0 +1,22 @@
+name: Test for dotfiles
+description: test
+
+author: uta8a
+
+branding:
+  color: green
+  icon: activity
+
+inputs:
+  name:
+    required: true
+    description: Name to pass
+    # default:
+
+outputs:
+  greeting:
+    description: Greetings to be passed
+
+runs:
+  using: docker
+  image: Dockerfile
