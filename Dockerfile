@@ -18,3 +18,7 @@ COPY roles roles
 RUN ansible-playbook main.yml -b
 
 COPY goss.yaml goss.yaml
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +rx /entrypoint.sh
+
+ENTRYPOINT [ "/entrypoint.sh" ]
