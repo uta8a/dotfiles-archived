@@ -25,7 +25,8 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=0    s
   - 56bcf7189c4030a57bc569ebcf8410b6e20a7358
   - cb69ef347f3b024dfd5e44d22094c971a6429970
   - moleculeやめたことに伴い、Dockerの必要性がなくなりansible preをしなくて良くなった
-- [ ] #4 role neovimでneovim入れる。
+- [x] #4 role neovimでneovim入れる。
+- 94d8d371755ad85f90571da86218018be864e112
 - [x] #5 moleculeでのテストする(cfgに軽いもの入れてやってみる)
   - 820c1f4487fa2d3e7c3c34b42cc99ac7e4ebba36
   - moleculeの採用をやめた(Docker+gossに変更)
@@ -73,4 +74,4 @@ dotfiles_test_dotfiles_1 exited with code 1
 - [x] #9 role cfgで一般的にほしい物入れる(主にapt, git config?)
   - 0299056b9a7f9f330b48f46297f274acc448ef00
   - file追加もここでやりたい
-- [ ] #10 
+- [ ] #10 GitHub Actionsに載せる
