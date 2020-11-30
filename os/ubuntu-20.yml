@@ -8,3 +8,6 @@
     pkg:
       - curl
   become: yes
+- name: setup config
+  import_role:
+    name: cfg
