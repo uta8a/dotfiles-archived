@@ -3,13 +3,12 @@ on: [push]
 jobs:
   test_ubuntu_20:
     name: Test for Ubuntu 20.04
-    strategy:
-      matrix:
-        os: ['ubuntu-20.04']
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
-      - name: Run test
-        run: |
-          /entrypoint.sh
+      - name: Build docker
+        uses: ./
+        id: dotfiles
+      - name: Output
+        run: echo "${{ steps.dotfiles.outputs }}"
