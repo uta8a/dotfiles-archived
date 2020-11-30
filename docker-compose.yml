@@ -3,4 +3,5 @@ services:
   test_dotfiles:
     build:
       context: ./
-    command: goss -g /dotfiles/goss.yaml validate
+    # command: goss -g /dotfiles/goss.yaml validate
+    # tty: true # for debug
