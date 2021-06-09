@@ -3,8 +3,12 @@
     update_cache: yes
     upgrade: "yes"
   become: yes
-- name: Set up
-  roles:
-    # - cfg
-    # - neovim
-    - procon
+- name: Setup config
+  import_role:
+    name: cfg
+- name: Install neovim & neovim settings
+  import_role:
+    name: neovim
+- name: procon settings
+  import_role:
+    name: procon
