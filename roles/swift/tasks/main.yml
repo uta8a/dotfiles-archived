@@ -1,0 +1,41 @@
+- name: Install packages via apt
+  apt:
+    pkg:
+      - binutils
+      - git
+      - gnupg2
+      - libc6-dev
+      - libcurl4
+      - libedit2
+      - libgcc-9-dev
+      - libpython2.7
+      - libsqlite3-0
+      - libstdc++-9-dev
+      - libxml2
+      - libz3-dev
+      - pkg-config
+      - tzdata
+      - zlib1g-dev
+  become: yes
+- name: Create directory
+  file:
+    path: "{{ ansible_env.HOME }}/install-sandbox"
+    state: directory
+    mode: "0755"
+- name: Create directory
+  file:
+    path: "{{ ansible_env.HOME }}/.Swift"
+    state: directory
+    mode: "0755"
+- name: Install swift # from: https://swift.org/download/
+  get_url: 
+    url: https://swift.org/builds/swift-5.4.1-release/ubuntu2004/swift-5.4.1-RELEASE/swift-5.4.1-RELEASE-ubuntu20.04.tar.gz
+    dest: "{{ ansible_env.HOME }}/install-sandbox/swift.tar.gz"
+- name: untar
+  unarchive:
+    src: "{{ ansible_env.HOME }}/install-sandbox/swift.tar.gz"
+    dest: "{{ ansible_env.HOME }}/.Swift/"
+- name: Add PATH to bashrc # bad way, fixed bashrc file instead
+  lineinfile:
+    path: "{{ ansible_env.HOME }}/.bashrc"
+    line: "export PATH=$HOME/.Swift/swift-5.4.1-RELEASE-ubuntu20.04/usr/bin:$PATH"
