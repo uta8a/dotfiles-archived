@@ -1,3 +1,5 @@
 gossfile:
   roles/cfg/tests/goss.yaml: {}
   roles/neovim/tests/goss.yaml: {}
+  roles/procon/tests/goss.yaml: {}
+  roles/swift/tests/goss.yaml: {}
