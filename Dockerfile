@@ -5,7 +5,6 @@ RUN apt-get update && apt-get install -y sudo
 # copy
 COPY install.ubuntu-20.sh install.sh
 COPY main.yml main.yml
-COPY os os
 RUN chmod +x ./install.sh
 RUN ./install.sh
 # goss intall
