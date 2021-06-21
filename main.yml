@@ -1,5 +1,7 @@
 - name: Setup environments
   hosts: localhost
-  tasks:
-    - import_tasks: "os/ubuntu-20.yml"
-      when: ansible_distribution == "Ubuntu" and ansible_distribution_major_version == "20"
+  roles:
+    - role: cfg
+    - role: neovim
+    - role: procon
+    - role: swift
